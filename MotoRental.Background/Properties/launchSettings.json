@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "MotoRental.Background": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7182"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 31626,
+      "useSSL": false
+    }
+  }
+}
