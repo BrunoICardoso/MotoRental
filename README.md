@@ -1,7 +1,7 @@
 # Aluguel de motos
 
 ## Descrição Breve
-Um sistema de aluguel de motos com arquitetura limpa e robusta, que permite aos administradores gerenciar eficientemente e aos entregadores gerir suas locações.
+Um sistema de aluguel de motos que permite aos administradores gerenciar eficientemente e aos entregadores gerir suas locações.
 
 ## Começando
 
