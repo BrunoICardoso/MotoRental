@@ -66,6 +66,7 @@ Quando a aplicação é iniciada, o método `EnsureDatabaseCreated`:
 Além da criação do banco de dados, o projeto utiliza o FluentMigrator para gerenciar as migrations, que são responsáveis pela criação das tabelas e pela manutenção da estrutura do banco de dados. As classes de migration estão localizadas no assembly do projeto e são aplicadas automaticamente durante o startup da aplicação através do serviço `IMigrationRunner`.
 
 A execução das migrations garante que o banco de dados esteja sempre atualizado com a última versão do esquema necessário para a aplicação funcionar corretamente.
+
 ---
 
 ## Contato
