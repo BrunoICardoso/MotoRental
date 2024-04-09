@@ -1,5 +1,8 @@
 # Aluguel de motos
 
+- [Wiki]([[https://docs.docker.com/get-docker/](https://github.com/BrunoICardoso/MotoRental/wiki/Documenta%C3%A7%C3%A3o-dos-Esquemas-de-Banco-de-Dados)](https://github.com/BrunoICardoso/MotoRental/wiki))
+
+
 ## Descrição Breve
 Um sistema de aluguel de motos que permite aos administradores gerenciar eficientemente e aos entregadores gerir suas locações.
 
