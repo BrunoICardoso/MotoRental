@@ -45,9 +45,28 @@ Para utilizar o sistema, siga as instruções abaixo:
   - `/auth/login` para autenticação
   - Utilize o token JWT recebido nas demais requisições como Bearer Token.
 
+
+Aqui está uma sugestão de texto para a seção de iniciação do banco de dados na Wiki do GitHub do projeto, em português:
+
+---
+### Criação Automática do Banco de Dados
+
+Para simplificar o processo de desenvolvimento, o projeto está configurado para verificar e criar o banco de dados automaticamente, caso ele ainda não exista. Isso é realizado através de um script de inicialização que executa durante a fase de startup da aplicação.
+
+O código responsável pela verificação e criação do banco de dados está localizado no método `EnsureDatabaseCreated` na classe `DatabaseManager`. Esse método faz parte do código de inicialização da aplicação e é invocado antes da aplicação começar a servir requisições.
+
+Quando a aplicação é iniciada, o método `EnsureDatabaseCreated`:
+
+1. Abre uma conexão com o PostgreSQL utilizando as credenciais fornecidas no arquivo de configuração.
+2. Verifica a existência do banco de dados destinado ao projeto.
+3. Caso o banco de dados não exista, o método executa um comando SQL para criar o banco.
+
+### Migrations
+
+Além da criação do banco de dados, o projeto utiliza o FluentMigrator para gerenciar as migrations, que são responsáveis pela criação das tabelas e pela manutenção da estrutura do banco de dados. As classes de migration estão localizadas no assembly do projeto e são aplicadas automaticamente durante o startup da aplicação através do serviço `IMigrationRunner`.
+
+A execução das migrations garante que o banco de dados esteja sempre atualizado com a última versão do esquema necessário para a aplicação funcionar corretamente.
+---
+
 ## Contato
 Bruno – bruno.inacio88@gmail.com
-
-```
-
-Certifique-se de substituir `seuprojeto`, `YOUR_JWT_TOKEN`, e as informações de contato pelas informações reais do seu projeto. Além disso, adapte as URLs e os exemplos de comandos conforme a configuração e as rotas específicas do seu projeto.
