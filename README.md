@@ -1,6 +1,6 @@
 # Aluguel de motos
 
-- [Wiki]([[https://docs.docker.com/get-docker/](https://github.com/BrunoICardoso/MotoRental/wiki/Documenta%C3%A7%C3%A3o-dos-Esquemas-de-Banco-de-Dados)](https://github.com/BrunoICardoso/MotoRental/wiki))
+- [Wiki](https://github.com/BrunoICardoso/MotoRental/wiki)
 
 
 ## Descrição Breve
