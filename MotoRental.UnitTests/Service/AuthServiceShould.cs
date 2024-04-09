@@ -48,5 +48,19 @@ namespace MotoRental.UnitTests.Service
             // Act & Assert
             await Assert.ThrowsAsync<NotFoundException>(() => _authService.AuthenticateAsync(loginDto));
         }
+      
+
+        [Fact]
+        public async Task AuthenticateAsync_InvalidPasswordForFirstUser_ThrowsBadRequestException()
+        {
+            // Arrange
+            var loginDto = new LoginDTO { Username = "newUser", Password = "weak" };
+            _userRepositoryMock.Setup(x => x.AnyAsync()).ReturnsAsync(false); // Simula que não há usuários
+
+            // Act & Assert
+            await Assert.ThrowsAsync<BadRequestException>(() => _authService.AuthenticateAsync(loginDto));
+        }
+
+
     }
 }
